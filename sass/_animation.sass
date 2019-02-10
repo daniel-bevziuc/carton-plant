@@ -1,0 +1,60 @@
+@-webkit-keyframes moveTop
+  from
+    margin-bottom: -50vh
+    opacity: 0
+    -webkit-transform: rotateY(90deg)
+    transform: rotateY(90deg)
+  to
+    margin-bottom: 0
+    opacity: 1
+
+@keyframes moveTop
+  from
+    margin-bottom: -50vh
+    opacity: 0
+    -webkit-transform: rotateY(90deg)
+    transform: rotateY(90deg)
+
+  to
+    margin-bottom: 0
+    opacity: 1
+
+@-webkit-keyframes moveRight
+  from
+    margin-left: -160px
+  to
+    margin-left: -10px
+
+@keyframes moveRight
+  from
+    margin-left: -160px
+  to 
+    margin-left: -10px
+
+@-webkit-keyframes moveLeft
+  from
+    margin-left: -10px
+  to
+    margin-left: -160px
+@keyframes moveLeft
+  from
+    margin-left: -10px
+  to
+    margin-left: -160px
+.fadeUp
+  -webkit-animation-name: moveTop
+  animation-name: moveTop
+  -webkit-animation-delay: 0.4s
+  animation-delay: 0.4s
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+.move-right
+  -webkit-animation: moveRight
+  animation: moveRight
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+.move-left
+  -webkit-animation: moveLeft
+  animation: moveLeft
+  -webkit-animation-duration: 1s
+  animation-duration: 1s

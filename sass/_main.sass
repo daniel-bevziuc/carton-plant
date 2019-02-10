@@ -1,0 +1,87 @@
+.main
+  position: relative
+  background: #373737 url(../img/main/main-bg.jpg) center no-repeat
+  background-size: cover
+  padding-top: 65px
+  padding-bottom: 60px
+  color: #ffffff
+  z-index: 0
+  &__img
+    position: relative
+    min-width: 445px
+    img
+      float: right
+      height: 385px
+      max-width: 480px
+    &::before
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      border: 1px solid #ffffff
+      opacity: 0.4
+      border-radius: 50%
+      width: 390px
+      height: 390px
+      z-index: 0
+    &::after
+      content: ''
+      position: absolute
+      top: 348px
+      margin-left: 80px
+      width: 60px
+      height: 50px
+      background: url(../img/main/pct.png) center no-repeat
+      z-index: 1
+  &__text-title
+    font-size: 41px
+    font-weight: 700
+    margin-bottom: 18px
+    line-height: 42px
+  &__text-subtitle
+    margin-bottom: 24px
+    font-size: 28px
+    font-weight: 300
+  &__text-form
+    padding: 30px 26px
+    max-width: 535px
+    background: rgba(255, 255, 255, 0.2)
+    border-radius: 5px
+    &__title
+      max-width: 421px
+      font-size: 20px
+      font-weight: 300
+      line-height: 30px
+    &__title-upc
+      display: block
+      margin-bottom: 20px
+      font-weight: 700
+      text-transform: uppercase
+    &__small
+      margin-left: 19px
+      font-size: 14px
+      font-weight: 300
+.form
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  padding: 0
+.input-phone
+  padding: 20px
+  border-radius: 5px
+  border: none
+  -ms-flex-preferred-size: 64%;
+  flex-basis: 64%
+  font-size: 14px
+  font-weight: 300
+.button-big
+  padding: 19px
+  margin-left: 10px
+  font-size: 15px
+  border: none
